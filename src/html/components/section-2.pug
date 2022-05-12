@@ -1,0 +1,64 @@
+section.container.events
+    ul.events__wrapper-1
+        li.events__item 
+            p. 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit laborum temporibus impedit pariatur, et perferendis quam saepe expedita, enim corporis fugiat quas libero labore, ducimus mollitia praesentium possimus blanditiis inventore.
+        li.events__item 
+        li.events__item 
+        li.events__item
+        li
+            |
+            |
+            a(href="") Link
+            |
+            |
+            a(href="") Link
+            |
+            |
+            a(href="") Link
+    |
+    |
+    ol.events__wrapper-2 
+        -for ( var x = 0; x < 5; x++)
+            li item
+                a(href="#") Link
+    |
+    |
+    ul.events__wrapper-3
+        -
+            var list = ['one', 'two', 'three', 'four', 'five', 'six']
+        each item in list
+            li= item
+
+    +listmixin
+
+    .carousel
+        .carousel__item
+            |
+            |
+            img.carousel__img(src="../img/images/chibis-01.jpg", alt="chibis" width="200" height="200")
+
+
+        .carousel__item
+            |
+            |
+            img.carousel__img(src="../img/images/chibis-02.jpg", alt="chibis" width="200" height="200")
+
+
+        .carousel__item
+            |
+            |
+            img.carousel__img(src="../img/images/chibis-03.jpg", alt="chibis" width="200" height="200")
+
+
+        .carousel__item
+            |
+            |
+            img.carousel__img(src="../img/images/chibis-04.jpg", alt="chibis" width="200" height="200")
+
+
+        .carousel__item
+            |
+            |
+            img.carousel__img(src="../img/images/chibis-05.jpg", alt="chibis" width="200" height="200") 
+
