@@ -3,6 +3,7 @@
 @import "./global/reset.scss";
 @import "./global/variables.scss";
 @import "./global/global.scss";
+@import "./global/mixins.scss";
 
 
 // Slick
@@ -13,4 +14,4 @@
 
 // Components
 @import "./components/header.scss";
-@import "./components/1_section-1.scss";
+
