@@ -1,6 +1,6 @@
 @mixin blur-box {
-    backdrop-filter: blur(52px);
-    border-radius: 20px;
-    
-    
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.14), inset 0px 2px 2px rgba(255, 255, 255, 0.26);
+    background: rgba(255, 255, 255, 0.01);    
 }

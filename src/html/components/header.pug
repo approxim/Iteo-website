@@ -1,18 +1,29 @@
 header.header.container
-    a(href="index.html")
-        img(src="@img/icons/logo-iteo.svg", alt="logo iteo", width="180", height="85")
+    a.header__logo(href="index.html")
+        img(src="@img/icons/icon_iteo-color.svg", alt="logo iteo", width="91", height="44")
 
-    nav
-        ul
-            li
+    button.header__burger
+        span.visually-hidden кнопка раскрытия меню
+
+    nav.header__nav
+        ul.header__list
+            li.header__item
+                |
+                |
                 a(href="#")
                     span аренда оборудования
-            li  
+            li.header__item
+                |
+                |
                 a(href="#")
                     span разработка
-            li
+            li.header__item
+                |
+                |
                 a(href="#")
                     span видеоролики
-            li
+            li.header__item
+                |
+                |
                 a(href="#")
                     span сайты

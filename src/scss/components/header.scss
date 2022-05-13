@@ -1,0 +1,51 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 5000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+
+
+    img {
+        width: 91px;
+        height: auto;
+    
+        @media (min-width: $tablet) {
+            width: 135px;
+        }
+        @media (min-width: $desktop) {
+            width: 180px;
+        }
+    }    
+}
+
+
+.header__burger {
+    display: block;
+
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.header__nav {
+    display: none;
+
+    @media (min-width: $tablet) {
+        display: block;
+    }
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__item {
+
+    &:not(:last-of-type) {
+        margin-right: 45px;
+    }    
+}

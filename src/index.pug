@@ -4,20 +4,23 @@ include html/global/variables
 
 html
     include html/global/head    
-        
+
     body
         include html/components/header
 
-        main.page 
-            
-            include html/components/section-1
+        main.index 
+
+            h1.visually-hidden Сайт компании ИТЕО. Главная страница
+            |
+            |
+            include html/components/1_panoram
 
 
             //- include html/components/section-2
 
             //- include html/components/section-3
 
-        //- include html/components/footer
+            //- include html/components/footer
 
         //- Скрипты
         include html/global/scripts-js
