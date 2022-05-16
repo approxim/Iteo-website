@@ -1,0 +1,126 @@
+.projects {
+    background: rgb(100,126,126);
+    background: linear-gradient(0deg, rgba(100,126,126,1) 0%, rgba(173,133,141,1) 52%, rgba(195,176,135,1) 100%);
+
+    padding-top: 41px;
+
+    @media (min-width: $tablet) {
+
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 120px;
+    }
+}
+
+
+.projects__wrapper {
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto 35px;
+    
+    @media (min-width: $desktop) {
+        grid-template-columns: 45% 55%;
+    }
+}
+
+.projects__title {
+    grid-area: 1 / 1 / 2 / 2;
+    @include h2;
+}
+
+.projects__tags {
+    grid-area: 1 / 2 / 2 / 3;
+
+    @include blur-box;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 33.333333%));
+    // grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+    
+    grid-auto-flow: dense; 
+
+    @media (min-width: $desktop) {
+        padding: 33px 40px 40px;
+        row-gap: 40px;
+    }    
+}
+
+.projects__tagcontainer {
+    @media (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.projects__tag {
+    background-color: transparent;
+    border: none;
+    color: $color-violet;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    white-space: nowrap;
+    transition: font-size .4s ease;
+    position: relative;
+
+    @media (min-width: $tablet) {
+
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 32px;
+        color: $color-white;
+    }
+
+    &::after {
+        @media (min-width: $desktop) {
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: $color-white;
+            position: absolute;
+            left: 50%;
+            bottom: -20px;
+            transform: translateX(-50%);
+            transition: width .4s ease;
+        }
+    }
+
+    &:hover {
+        &::after {
+            @media (min-width: $desktop) {
+                width: 100%;
+            } 
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 40px;
+        }
+    }
+
+    &.active {
+        &::after {
+            @media (min-width: $desktop) {
+                width: 100%;  
+            }
+        }
+    }
+}
+
+.projects__list {
+    grid-area: 2 / 1 / 3 / 3;
+    margin-top: 50px;
+
+    @media (min-width: $tablet) {
+        // margin-top: ;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 90px;
+    }
+}
+
+.projects__show-more {
+    grid-area: 3 / 1 / 4 / 3;
+}
