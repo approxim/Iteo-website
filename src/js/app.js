@@ -18,21 +18,16 @@ flsFunctions.isWebp();
 
 
 
-
-// $('.text').text('Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Назад всеми рукописи гор несколько предупреждал составитель великий, заголовок своего напоивший коварный агентство взобравшись осталось власти одна мир алфавит реторический?');
-
 // $('.carousel').slick({
-//     infinite: true,
 //     slidesToShow: 1,
 //     slidesToScroll: 1,
-//     arrows: false,
-//     dots: true
+//     autoplay: true,
+//     autoplaySpeed: 2000,
 // });
 
-
-$('.carousel').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+// burger-menu
+$(document).ready(function(){
+	$('.header__burger').click(function(){
+		$(this).toggleClass('open');
+	});
 });
