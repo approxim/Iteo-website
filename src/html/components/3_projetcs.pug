@@ -4,64 +4,72 @@ section.projects
     .projects__wrapper.container 
         p.projects__title Реализованные проекты
 
-        .projects__tags
-            .projects__tagcontainer 
-            button(type="button").projects__tag пространства
+        .projects__tagwrap
 
-            button(type="button").projects__tag.active видеоролики
+        
 
-            button(type="button").projects__tag экспо
+            .projects__tags
 
-            button(type="button").projects__tag сайты
+                button(type="button" data-filter="all").projects__tag все проекты
 
-            button(type="button").projects__tag для бизнеса
+                button(type="button" data-filter="artspaces").projects__tag пространства
 
-            button(type="button").projects__tag приложения 
+                button(type="button" data-filter="video").projects__tag видеоролики
+
+                button(type="button" data-filter="expo").projects__tag экспо
+
+                button(type="button" data-filter="wibsites").projects__tag сайты
+
+                button(type="button" data-filter="for-business").projects__tag для бизнеса
+
+                button(type="button" data-filter="apps").projects__tag приложения 
+
+            button.projects__tagcontainer все проекты
 
 
         ol.projects__list
             li
-                article.projects__item
+                article.projects__item.artspaces
                     h3.projects__name Детская библиотека Бажова 
                     p.projects__desc Для создания качественных ночных кадров лучше снимать в RAW-формате. Самое разумное, что вы можете сделать
                     img.projects__img(src="@img/images/test-picture_001.jpg" srcset="@img/images/test-picture_001.jpg 2x" alt="картинка" width="290" height="156")
-
-                article.projects__item
+            li
+                article.projects__item.websites
                     h3.projects__name Кэф `22
                     p.projects__desc Со штативом вам доступно применение длинных выдержек без опасности получить смазанную картинку.
                     img.projects__img(src="@img/images/test-picture_002.jpg" srcset="@img/images/test-picture_002.jpg 2x" alt="картинка" width="290" height="156")
-
-                article.projects__item
+            li
+                article.projects__item.for-business
                     h3.projects__name Библиотека Горького
                     p.projects__desc Очень обидно, когда вы не нравитесь себе ни на одной фотографии.
                     img.projects__img(src="@img/images/test-picture_003.jpg" srcset="@img/images/test-picture_003.jpg 2x" alt="картинка" width="290" height="156")
-
-                article.projects__item
+            li
+                article.projects__item.video
                     h3.projects__name Исторический форум `21
                     p.projects__desc В наше время практически каждый человек периодически делает фотоснимки – неважно, камерой старенького телефона
                     img.projects__img(src="@img/images/test-picture_004.jpg" srcset="@img/images/test-picture_004.jpg 2x" alt="картинка" width="290" height="156")
-
-                article.projects__item
+            li
+                article.projects__item.websites
                     h3.projects__name Очередная фонференция
                     p.projects__desc Оседлое население Орды включало волжских булгар, мордовские народы, славян, греков и др. 
                     img.projects__img(src="@img/images/test-picture_005.jpg" srcset="@img/images/test-picture_005.jpg 2x" alt="картинка" width="290" height="156")
-
-                article.projects__item
+            li
+                article.projects__item.for-business
                     h3.projects__name Что то от Енисейской сибири
                     p.projects__desc Среди кочевых народов были половцы, канглыи, татары, туркмены, киргизы и другие.
                     img.projects__img(src="@img/images/test-picture_006.jpg" srcset="@img/images/test-picture_006.jpg 2x" alt="картинка" width="290" height="156")
-
-                article.projects__item
-                    h3.projects__name Какое то мероприятие
+            li
+                article.projects__item.apps
+                    h3.projects__name Какое-то мероприятие
                     p.projects__desc Ливонская война, в ходе которой впервые русская армия держалась под знамёнами подряд много лет, вместе с опричниной ударила по экономике
                     img.projects__img(src="@img/images/test-picture_007.jpg" srcset="@img/images/test-picture_007.jpg 2x" alt="картинка" width="290" height="156")
-
-                article.projects__item
+            li
+                article.projects__item.video
                     h3.projects__name Культурно-исторический центр
                     p.projects__desc Уложение о службе 1555—1556 годов обязало всех землевладельцев выставлять воинов пропорционально площади земли.
                     img.projects__img(src="@img/images/test-picture_008.jpg" srcset="@img/images/test-picture_008.jpg 2x" alt="картинка" width="290" height="156")
-
-                article.projects__item
+            li
+                article.projects__item.apps
                     h3.projects__name Экономический форум
                     p.projects__desc Впоследствии великие княжества Московское и Литовское стремились к тому, чтобы именно их претендент занимал общерусскую митрополию
                     img.projects__img(src="@img/images/test-picture_009.jpg" srcset="@img/images/test-picture_009.jpg 2x" alt="картинка" width="290" height="156")
