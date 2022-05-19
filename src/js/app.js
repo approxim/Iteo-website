@@ -30,24 +30,7 @@ $('.projects__tagcontainer').click(function() {
 	$('.projects__tags').toggleClass('visible');
 });
 
-// document.addEventListener("click", (e) => {
-// 	// let projectsButtons = document.querySelectorAll('.projects__tag');
-// 	let container = document.querySelector('.projects__tags');
-
-// 	if (e.target.matches('.projects__tag')) return;
-// 	container.classList.remove("visible");
-// });
-
-
-
-
-window.addEventListener("click", (e) => {
-	const NODES = ["BUTTON"];
-	let container = document.querySelector('.projects__tags');
-  	if (NODES.includes(e.target.nodeName)) return;
-  	container.classList.remove("visible");
-});
-
+// Нажатие на кнопки пунктов сортера
 $('.projects__tag').each(function() {
 	$(this).click(function() {
 	  var textValue = $(this).html();
@@ -56,8 +39,13 @@ $('.projects__tag').each(function() {
 	});
 });
 
-
-// document.addEventListener()
+// В случае если ткнуть мимо пунктов сортера то список скроется
+window.addEventListener("click", (e) => {
+	const NODES = ["BUTTON"];
+	let container = document.querySelector('.projects__tags');
+  	if (NODES.includes(e.target.nodeName)) return;
+  	container.classList.remove("visible");
+});
 
 // Управление сортировкой в секции Проекты
 $(document).ready(function(){
@@ -68,8 +56,9 @@ $(document).ready(function(){
 		$(elem).show("500");
 	  }
 	  else{
-		$(elem).not("."+value).hide("500");
-		$(elem).filter("."+value).show("500");
+		$(elem).not(".projects__item[data-sort='"+value+"']").hide("500");
+		$(elem).filter(".projects__item[data-sort='"+value+"']").show("500");
 	  }
 	});
 })
+
