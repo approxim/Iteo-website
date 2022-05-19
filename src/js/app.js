@@ -56,8 +56,8 @@ $(document).ready(function(){
 		$(elem).show("500");
 	  }
 	  else{
-		$(elem).not(".projects__item[data-sort='"+value+"']").hide("500");
-		$(elem).filter(".projects__item[data-sort='"+value+"']").show("500");
+		$(elem).not(".projects__item[data-sort~='"+value+"']").hide("500");
+		$(elem).filter(".projects__item[data-sort~='"+value+"']").show("500");
 	  }
 	});
 })
