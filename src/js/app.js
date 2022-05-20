@@ -103,11 +103,12 @@ setInterval(() => {
   // 1148px - 1 часть
   let currBackgroundPosition =
     computedStylesPanoram.backgroundPositionX.slice(0, -2) % 3444;
-  if (-currBackgroundPosition < 1148) {
+  currBackgroundPosition = Math.abs(currBackgroundPosition)
+  if (currBackgroundPosition < 1148) {
     titleNodes[0].classList.add('active');
     titleNodes[1].classList.remove('active');
     titleNodes[2].classList.remove('active');
-  } else if (-currBackgroundPosition < 2296) {
+  } else if (currBackgroundPosition < 2296) {
     titleNodes[0].classList.remove('active');
     titleNodes[1].classList.add('active');
     titleNodes[2].classList.remove('active');
