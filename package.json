@@ -44,11 +44,12 @@
     "swiper": "^8.1.0",
     "vinyl-ftp": "^0.6.1",
     "webp-converter": "2.2.3",
-    "webpack": "^5.72.0",
+    "webpack": "^5.72.1",
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
     "jquery": "latest",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "util": "^0.12.4"
   }
 }
