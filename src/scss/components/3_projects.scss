@@ -1,19 +1,24 @@
 .projects {
-    background: rgb(100,126,126);
-    background: linear-gradient(0deg, rgba(100,126,126,1) 0%, rgba(173,133,141,1) 52%, rgba(195,176,135,1) 100%);
-
-    padding-top: 41px;
+    background: url('../../img/images/decor_man-back.webp') right 20em bottom 20px / 5em no-repeat, url('../../img/images/decor_flower.webp') left 30em bottom 40px / 4em no-repeat, url('../../img/images/decor_workplace-3.webp') left 7em bottom 2px / 30em no-repeat, url('../../img/icons/floor.svg') left bottom / auto 15px repeat-x;
 
     @media (min-width: $tablet) {
 
     }
 
-    @media (min-width: $desktop) {
-        padding-top: 120px;
-
-
-        padding-bottom: 100px;
+    @media (min-width: $laptop) {
+        background: url('../../img/images/decor_flower-stand.webp') right 3em bottom 10px / 14em no-repeat, url('../../img/images/decor_man-back.webp') right 20em bottom 20px / 5em no-repeat, url('../../img/images/decor_flower.webp') left 30em bottom 40px / 4em no-repeat, url('../../img/images/decor_workplace.webp') left 7em bottom 2px / 30em no-repeat, url('../../img/icons/floor.svg') left bottom no-repeat;
     }
+       
+
+    // background: url('@img/icons/floor.svg') left bottom / 100% repeat-x, linear-gradient(0deg, rgba(100,126,126,1) 0%, rgba(173,133,141,1) 52%, rgba(195,176,135,1) 100%);
+
+    // padding-top: 41px;
+    padding-top: 120px;
+    padding-bottom: 300px;
+    // @media (min-width: $desktop) {
+    //     padding-top: 120px;
+    //     padding-bottom: 100px;
+    // }
 }
 
 .projects__wrapper {
@@ -45,8 +50,7 @@
 }
 
 .projects__tagwrap {
-    grid-area: 2 / 1 / 3 / 2;
-    
+    grid-area: 2 / 1 / 3 / 2;    
     justify-self: center;
     align-self: center;
     position: relative;
@@ -372,7 +376,7 @@
       
         @include blur-box;
 
-        border-radius: 8px;
+        border-radius: 0px 0px 8px 8px !important;
 
         height: 35px;
         width: 85px;
@@ -391,4 +395,3 @@
         transform: rotate(90deg); 
     }
 }
-
