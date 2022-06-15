@@ -1,12 +1,12 @@
 .projects {
-    background: url('../../img/images/decor_man-back.webp') right 20em bottom 20px / 5em no-repeat, url('../../img/images/decor_flower.webp') left 30em bottom 40px / 4em no-repeat, url('../../img/images/decor_workplace-3.webp') left 7em bottom 2px / 30em no-repeat, url('../../img/icons/floor.svg') left bottom / auto 15px repeat-x;
+    // background: url('../../img/images/decor_man-back.webp') right 20em bottom 20px / 5em no-repeat, url('../../img/images/decor_flower.webp') left 30em bottom 40px / 4em no-repeat, url('../../img/images/decor_workplace-3.webp') left 7em bottom 2px / 30em no-repeat, url('../../img/icons/floor.svg') left bottom / auto 15px repeat-x;
 
     @media (min-width: $tablet) {
 
     }
 
     @media (min-width: $laptop) {
-        background: url('../../img/images/decor_flower-stand.webp') right 3em bottom 10px / 14em no-repeat, url('../../img/images/decor_man-back.webp') right 20em bottom 20px / 5em no-repeat, url('../../img/images/decor_flower.webp') left 30em bottom 40px / 4em no-repeat, url('../../img/images/decor_workplace.webp') left 7em bottom 2px / 30em no-repeat, url('../../img/icons/floor.svg') left bottom no-repeat;
+        // background: url('../../img/images/decor_flower-stand.webp') right 3em bottom 10px / 14em no-repeat, url('../../img/images/decor_man-back.webp') right 20em bottom 20px / 5em no-repeat, url('../../img/images/decor_flower.webp') left 30em bottom 40px / 4em no-repeat, url('../../img/images/decor_workplace.webp') left 7em bottom 2px / 30em no-repeat, url('../../img/icons/floor.svg') left bottom no-repeat;
     }
        
 
@@ -258,6 +258,7 @@
 
     &:hover .projects__name::after {
         width: calc(100% + 20px);
+
     }
 
     &:hover .projects__img::after {
