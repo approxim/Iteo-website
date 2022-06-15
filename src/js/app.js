@@ -19,11 +19,56 @@ flsFunctions.isWebp();
 
 
 // burger-menu
-$(document).ready(function(){
-	$('.header__burger').click(function(){
-		$(this).toggleClass('open');
-	});
-});
+// $(document).ready(function(){
+// 	$('.header__burger').click(function(){
+// 		$(this).toggleClass('open');
+// 		$('.header__overlay').toggleClass('open');
+// 	});
+// });
+
+$('.header__burger, .header__overlay').click(function(){
+	$('.header__burger').toggleClass('open');
+	$('.header__overlay').toggleClass('open');
+	// $('nav').toggleClass('show');
+	// $('body').toggleClass('overflow');
+  });
+
+
+
+// const pushBurger = function () {
+// 	const burger = document.querySelector('.header__burger');
+// 	const navMenu = document.querySelector('.header__nav');
+// 	const overlay = document.querySelector('.header__overlay');
+
+
+
+// 	burger.addEventListener('click', )
+// }
+
+
+
+// let sidebarNavEl = $("#sidebar");
+// let burgerEl = $("#nav__burger");
+// let navOverlayEl = $("#nav__overley");
+
+// burgerEl.on("click", function (event) {
+//     event.preventDefault();
+//     sidebarNavEl.toggleClass("active");
+//     burgerEl.toggleClass("change"); // в крест
+//     navOverlayEl.toggleClass("active");
+// });
+
+// navOverlayEl.on("click", function (event) {
+//     burgerEl.click();
+	
+// });
+
+
+
+
+
+
+
 
 // Появление-скрытие меню сортировки
 $('.projects__tagcontainer').click(function() {
