@@ -100,11 +100,6 @@
             @media(min-width: $tablet) {
                 width: 50vw;
             }
-            
-            // @media(min-width: $laptop) {
-            //     clip-path: none;
-            //     width: auto;
-            // }
 
             .header__list {
                 width: 100%;
@@ -197,22 +192,6 @@
     @media (min-width: $desktop) {
         margin-right: 60px;
     }
-
-    // &::after {
-    //     content: "";
-    //     width: 100vw;
-    //     height: 100vh;
-    //     background-color: transparentize($color-black, .5);
-
-    //     position: absolute;
-    //     top: 0;
-    //     right: 0;
-    //     bottom: 0;
-    //     left: 0;
-    //     z-index: 4000;
-
-    // }
-
 }
 
 .header__list {
@@ -279,6 +258,10 @@
             border: none;
         }
     }
+
+    &.current {
+        background-color: $color-lightblue;
+    }
 }
 
 .header__social {
@@ -310,7 +293,6 @@
 }
 
 .header__overlay {
-    // display: none;
     visibility: hidden;
     opacity: 0;
     position: fixed;
