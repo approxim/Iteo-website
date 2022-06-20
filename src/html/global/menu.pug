@@ -1,20 +1,22 @@
 ul.header__list
-            -
-                let menu = [
-                    {url: "/", text: "Главная"},
-                    {url: "/rent.html", text: "Аренда оборудования"},
-                    {url: "/software.html", text: "Разработка"},
-                    {url: "/video.html", text: "Видеоролики"},
-                    {url: "/websites.html", text: "Сайты"},
-                ]
+    -
+        let menu = [
+            {url: "/", text: "Главная"},
+            {url: "/rent.html", text: "Аренда оборудования"},
+            {url: "/software.html", text: "Разработка"},
+            {url: "/video.html", text: "Видеоролики"},
+            {url: "/websites.html", text: "Сайты"},
+            {url: "/projects.html", text: "Проекты"},
+            {url: "/project.html", text: "Одиночный проект"}
+        ]
 
-            - let isPage = 0;
-            each element,i in menu
-                if isPage === i
-                    li.header__item.current 
-                        a(href=element.url)
-                            span #{element.text}
-                else
-                    li.header__item
-                        a(href=element.url)
-                            span #{element.text}
+    - let isPage = 0;
+    each element,i in menu
+        if isPage === i
+            li.header__item.current 
+                a(href=element.url)
+                    span #{element.text}
+        else
+            li.header__item
+                a(href=element.url)
+                    span #{element.text}
