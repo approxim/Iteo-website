@@ -2,7 +2,7 @@
 import $ from "jquery";
 
 // Подключение Slick-Slider
-// import  "slick-carousel";
+import  "slick-carousel";
 
 // подключение слайдера Swiper
 // import Swiper, { Navigation, Pagination } from 'swiper';
@@ -12,32 +12,20 @@ import $ from "jquery";
 import * as flsFunctions from "./modules/functions.js";
 flsFunctions.isWebp();
 
+// header
+import * as header from "./modules/header.js";
+header.headerJS();
+
+// Подключение модуля с инициализацией слайдеров
+import * as slicks from "./modules/slick-sliders.js";
+slicks.slickSliders();
+
+//
+import * as project from "./modules/project-page.js";
+project.projectPage();
 
 
 
-// burger-menu
-$('.header__burger, .header__overlay').click(function(){
-	$('.header__burger').toggleClass('open');
-	$('.header__overlay').toggleClass('open');
-	// $('nav').toggleClass('show');
-	// $('body').toggleClass('overflow');
-  });
-
-
-
-// Появление-скрытие меню сортировки
-$('.projects__tagcontainer').click(function() {
-	$('.projects__tags').toggleClass('visible');
-});
-
-// Нажатие на кнопки пунктов сортера
-$('.projects__tag').each(function() {
-	$(this).click(function() {
-	  var textValue = $(this).html();
-	  $('.projects__tagcontainer').html(textValue);
-	  $('.projects__tags').removeClass('visible');
-	});
-});
 
 // В случае если ткнуть мимо пунктов сортера то список скроется
 window.addEventListener("click", (e) => {
