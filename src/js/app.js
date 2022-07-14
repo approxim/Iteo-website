@@ -24,11 +24,26 @@ slicks.slickSliders();
 import * as project from "./modules/project-page.js";
 project.projectPage();
 
+import * as otherProjects from "./modules/moreprojects.js";
+otherProjects.moreProjects();
 
+
+
+
+
+// задание зависимости высоты блока в зависимости от ширины
+$(function(){
+	$('.resize-height').height($('.resize-height').width()/2);
+  
+	$(window).resize(function(){
+	  $('.resize-height').height($('.resize-height').width()/2);
+	});
+});
 
 
 // В случае если ткнуть мимо пунктов сортера то список скроется
-window.addEventListener("click", (e) => {
+let projectsTagContainer = document.querySelector('.projects__tagcontainer');
+projectsTagContainer.addEventListener("click", (e) => {
 	const NODES = ["BUTTON"];
 	let container = document.querySelector('.projects__tags');
   	if (NODES.includes(e.target.nodeName)) return;

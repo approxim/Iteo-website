@@ -3,97 +3,91 @@ include html/global/mixins
 include html/global/variables
 
 html
-    include html/global/head    
+    include html/global/head
 
     body
         include html/components/header
 
-        main
-            br
-            br
-            br
-            br
-            br
-            br
+        main.project
+            // Секция Промо
+            //- section.project-promo
+            //-     h1.visually-hidden Название проекта
 
-            section.project-promo.container 
-                h1.visually-hidden Проект такой-то
+            //-     p.project-promo__title.container  Проект такой-то
+            //-     p.project-promo__subtitle.container  Новая модель организационной деятельности в значительной степени обусловливает важность укрепления моральных ценностей.
 
-                p.project-promo__title Проект такой-то           
-                p.project-promo__subtitle Вот вам яркий пример современных тенденций — новая модель организационной деятельности в значительной степени обусловливает важность укрепления моральных ценностей.
+            //-     a.project-promo__button.container(href="/" title="на главную")
+            //-         span На главную
 
-                a.project-promo__button(href="/" title="на главную")
-                    span На главную
+            //-     .project-promo__slider-wrapper.resize-height 
+            //-         .project-promo__slider-list 
+            //-             .project-promo__slider-item.resize-height
+            //-                 img(src="@img/images/test-picture_001.jpg" alt="picture" width="320" height="188")
+            //-             .project-promo__slider-item.resize-height
+            //-                 img(src="@img/images/test-picture_002.jpg" alt="picture" width="320" height="188")
+            //-             .project-promo__slider-item.resize-height
+            //-                 img(src="@img/images/test-picture_003.jpg" alt="picture" width="320" height="188")
 
-                .project-promo__slider-wrapper 
-                    .project-promo__slider-list 
-                        .project-promo__slider-item
-                            img(src="@img/images/test-picture_001.jpg" alt="picture" width="320" height="188")
-                        .project-promo__slider-item
-                            img(src="@img/images/test-picture_002.jpg" alt="picture" width="320" height="188")
-                        .project-promo__slider-item
-                            img(src="@img/images/test-picture_003.jpg" alt="picture" width="320" height="188")
+            //- .project__wrap
+            //-     // Коротко о проекте
+            //-     section.project-shorts.container
+            //-         h2.visually-hidden Коротко о проекте
 
-            section
-                section.project-shorts
-                    h2.visually-hidden Коротко о проекте
+            //-         .project-shorts__aboutclient.project-shorts__about
+            //-             h3 О заказчике:
+            //-             p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Составитель переулка, буквенных текстами скатился вершину языком снова которое языкового одна путь напоивший гор выйти приставка взгляд парадигматическая власти! Продолжил!
 
-                    .project-shorts__aboutclient
-                        h3 О заказчике:
-                        p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Составитель переулка, буквенных текстами скатился вершину языком снова которое языкового одна путь напоивший гор выйти приставка взгляд парадигматическая власти! Продолжил!
+            //-         .project-shorts__task.project-shorts__about
+            //-             h3 Задача:
+            //-             p Ясность нашей позиции очевидна: курс на социально-ориентированный национальный проект выявляет срочную потребность переосмысления внешнеэкономических политик. Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира и по сей день остаются уделом либералов, которые жаждут быть заблокированы в рамках своих собственных рациональных ограничений. Как принято считать, акционеры крупнейших компаний ограничены исключительно образом мышления. 
 
-                    .project-shorts__task
-                        h3 Задача:
-                        p Ясность нашей позиции очевидна: курс на социально-ориентированный национальный проект выявляет срочную потребность переосмысления внешнеэкономических политик. Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира и по сей день остаются уделом либералов, которые жаждут быть заблокированы в рамках своих собственных рациональных ограничений. Как принято считать, акционеры крупнейших компаний ограничены исключительно образом мышления. 
+            //-         .project-shorts__realized.project-shorts__about
+            //-             h3 Реализовано:
+            //-             p Таким образом, высокое качество позиционных исследований в значительной степени обусловливает важность экономической целесообразности принимаемых решений. Как уже неоднократно упомянуто, непосредственные участники технического прогресса и по сей день остаются уделом либералов, которые жаждут быть в равной степени предоставлены сами себе.
 
-                    .project-shorts__realized
-                        h3 Реализовано:
-                        p Таким образом, высокое качество позиционных исследований в значительной степени обусловливает важность экономической целесообразности принимаемых решений. Как уже неоднократно упомянуто, непосредственные участники технического прогресса и по сей день остаются уделом либералов, которые жаждут быть в равной степени предоставлены сами себе.
 
-                section.project-description.container 
-                    h2 Описание проекта
+            //-     // Отзыв заказчика
+            //-     section.project-review.container                 
+
+            //-         .project-review__info 
+            //-             h2 Отзыв заказчика:
+            //-             .project-review__photo-box 
+            //-                 img(src="@img/images/test-picture_100.jpg", alt="фото заказчика" width="60" height="60")
+            //-             div.project-review__client
+            //-                 p.project-review__name Ступина Людмила Борисовна
+            //-                 p.project-review__position главный бухгалтер
+            //-             p.project-review__cite.
+            //-                 Как принято считать, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть объявлены нарушающими общечеловеческие нормы этики и морали. Разнообразный и богатый опыт говорит нам, что существующая теория однозначно фиксирует необходимость прогресса профессионального сообщества. 
+            //-             button.project-review__showmore(type="button") 
+            //-                 span просмотреть
+
+
+            //- // Описание проекта
+            //- section.project-description.container 
+                h2 Описание проекта:
+                .project-description__text
                     p Однозначно, базовые сценарии поведения пользователей набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены. В своём стремлении повысить качество жизни, они забывают, что социально-экономическое развитие предопределяет высокую востребованность модели развития. Сложно сказать, почему явные признаки победы институционализации обнародованы. Следует отметить, что начало повседневной работы по формированию позиции выявляет срочную потребность благоприятных перспектив.
 
-                    .project-description__wrapper 
-                        .project-description__sliderlist
-                            .project-description__slideritem 
-                                img(src="@img/images/test-picture_201.jpg" alt="picture" width="278" height="135")
+                .project-description__wrapper.resize-height.resize-height
+                    .project-description__sliderlist
+                        .project-description__slideritem.resize-height.resize-height
+                            img(src="@img/images/test-picture_201.jpg" alt="picture" width="278" height="135")
 
-                            .project-description__slideritem 
-                                img(src="@img/images/test-picture_202.jpg" alt="picture" width="278" height="135")
+                        .project-description__slideritem.resize-height.resize-height 
+                            img(src="@img/images/test-picture_202.jpg" alt="picture" width="278" height="135")
 
-                            .project-description__slideritem 
-                                img(src="@img/images/test-picture_203.jpg" alt="picture" width="278" height="135")
+                        .project-description__slideritem.resize-height.resize-height
+                            img(src="@img/images/test-picture_203.jpg" alt="picture" width="278" height="135")
 
-                            .project-description__slideritem 
-                                img(src="@img/images/test-picture_204.jpg" alt="picture" width="278" height="135")
+                        .project-description__slideritem.resize-height.resize-height
+                            img(src="@img/images/test-picture_204.jpg" alt="picture" width="278" height="135")
 
-            section.moreprojects.container 
-                    h2 Еще проекты:
+            // Другие проекты
+            include html/components/5_more-projects
 
-                    .moreprojects__wrapper 
-                        .moreprojects__sliderlist
-                            .moreprojects__slideritem 
-                                a(href="#")
-                                    img(src="@img/images/test-picture_009.jpg", alt="" width="257" height="155")
-                                    span Проект Лето
 
-                            .moreprojects__slideritem 
-                                a(href="#")
-                                    img(src="@img/images/test-picture_008.jpg", alt="" width="257" height="155")
-                                    span Проект Осень
 
-                            .moreprojects__slideritem 
-                                a(href="#")
-                                    img(src="@img/images/test-picture_007.jpg", alt="" width="257" height="155")
-                                    span Проект Весна
-
-                            .moreprojects__slideritem 
-                                a(href="#")
-                                    img(src="@img/images/test-picture_006.jpg", alt="" width="257" height="155")
-                                    span Проект Зима
-
-        include html/components/footer
+        //- include html/components/footer
 
         //- Скрипты
         include html/global/scripts-js
