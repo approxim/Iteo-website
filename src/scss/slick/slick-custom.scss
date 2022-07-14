@@ -1,0 +1,57 @@
+.slick-track {
+    display: flex;
+    min-width: 0;
+}
+
+// Кастомные стрелки
+.slick-slider .slick-arrow{
+    position: absolute;
+    top: 50%; // выравнивание по вертикали
+    transform: translateY(-50%);
+    margin: -15px 0 0 0; // корректировка  вертикального выравнивания
+    z-index: 2; // стрелки сверху картинок
+    font-size: 0; // убираем надпись на дефолтной стрелке
+    width: 30px; // ширина стрелки
+    height: 30px; // высота стрелки
+    cursor: pointer;
+
+    background-color: $color-white;
+    border-radius: 50%;
+}
+.slick-prev, .slick-next {
+
+    &::before {
+        content: '^';
+        position: absolute;
+        top: 0;
+        width: 7px;
+        height: 13px;
+        font-weight: 900;
+        color: $color-violet;
+        transition: color .3s ease;
+    }
+
+    &:hover::before {
+        color: $color-blue;
+    }
+}
+.slick-prev {
+    &::before {
+        left: 50%;
+        top: 62%;
+        transform: translate(-50%, -50%) rotate(-90deg);
+
+    }
+}
+.slick-next {
+    &::before {
+        left: 50%;
+        top: 33%;
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+}
+
+// .slick-disabled {
+//     cursor: default !important;
+//     filter: grayscale(100%) opacity(25%);
+// }

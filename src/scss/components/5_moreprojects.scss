@@ -1,0 +1,61 @@
+.moreprojects {
+    margin-bottom: 55px;
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 24px;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+
+    @media(min-width: $tablet) {
+        margin-bottom: 80;
+    }
+    @media(min-width: $desktop) {
+        margin-bottom: 115;
+    }
+
+    h2 {
+        @include h3;
+        margin-bottom: 21px;
+    }
+    
+
+}
+
+.moreprojects__wrapper {
+
+    .slick-slide {
+        padding: 0 20px;
+    }
+
+}
+
+.moreprojects__slideritem {
+    a {
+        display: block;
+        position: relative;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0 auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: $color-white;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        padding: 6px 0 0 7px;
+    }
+
+}

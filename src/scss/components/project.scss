@@ -1,0 +1,443 @@
+.project {
+  @media (min-width: $tablet) {
+  }
+}
+
+.project-promo {
+  margin-top: 65px;
+  position: relative;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet) {
+    margin-top: 188px;
+    margin-bottom: 75px;
+  }
+  @media (min-width: $desktop) {
+    margin-top: 204px;
+  }
+}
+.project-promo__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: $color-white;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 33px;
+  }
+  @media (min-width: $desktop) {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+.project-promo__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: $color-black;
+
+  @media (min-width: $tablet) {
+    font-size: 23px;
+    line-height: 27px;
+  }
+  @media (min-width: $desktop) {
+    font-size: 29px;
+    line-height: 34px;
+  }
+}
+
+.project-promo__button {
+  display: none;
+  background-color: $color-blue;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 5px 14px;
+  border-radius: 6px;
+  color: $color-white;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    margin-right: 80px;
+  }
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 21px;
+    margin-right: 100px;
+    padding: 7px 24px;
+  }
+}
+
+.project-promo__slider-wrapper {
+  width: 100%;
+  height: 250px;
+  margin-top: 16px;
+
+  position: relative;
+  box-shadow: 5px 7px 14px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+
+  @media (min-width: $tablet) {
+    margin-top: 40px;
+    border-radius: 15px;
+    height: 450px;
+  }
+  @media (min-width: $desktop) {
+    margin: 75px 100px 0 100px;
+    width: auto;
+    height: 60vmin;
+  }
+}
+
+.project-promo__slider-item {
+  width: 100%;
+  height: 250px;
+
+  @media (min-width: $tablet) {
+    height: 450px;
+  }
+  @media (min-width: $desktop) {
+    height: 60vmin;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+
+    position: relative;
+
+    @media (min-width: $tablet) {
+      border-radius: 15px;
+    }
+  }
+}
+
+.project__wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: url('../../img/images/decor_compose-1.webp') no-repeat bottom 5px
+      right 50px / 40%,
+    url('../../img/icons/floor.svg') repeat-x bottom right;
+  box-shadow: 0 15px 14px -6px rgba(0, 0, 0, 0.2);
+  padding-bottom: 130px;
+
+  @media (min-width: $tablet) {
+    flex-flow: row-reverse;
+    padding-bottom: 0;
+  }
+}
+
+.project-shorts {
+  display: none;
+  position: relative;
+  @media (min-width: $tablet) {
+    flex-basis: 60%;
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 75px;
+    column-gap: 50px;
+    padding-left: 0;
+    width: 100%;
+    padding: 55px 50px 0 75px;
+  }
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 112px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+
+    width: 13px;
+    height: 100%;
+
+    background: #424242;
+    box-shadow: inset -3px 3px 4px rgba(255, 255, 255, 0.25),
+      inset 3px -3px 4px rgba(0, 0, 0, 0.25);
+    transform: skewY(45deg);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+
+    width: 100%;
+    height: 13px;
+
+    background: #424242;
+    box-shadow: inset -3px 3px 4px rgba(255, 255, 255, 0.25),
+      inset 3px -3px 4px rgba(0, 0, 0, 0.25);
+    transform: skewX(45deg);
+  }
+}
+.project-shorts__about {
+  h3 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    color: $color-white;
+    margin-bottom: 17px;
+
+    @media (min-width: $desktop) {
+      font-weight: 700;
+      font-size: 27px;
+      line-height: 32px;
+      margin-bottom: 30px;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    @media (min-width: $desktop) {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+}
+.project-shorts__aboutclient {
+  width: auto;
+  @media (min-width: $desktop) {
+    grid-area: 1/1/2/2;
+  }
+}
+.project-shorts__task {
+  width: auto;
+  @media (min-width: $desktop) {
+    grid-area: 1/2/2/3;
+  }
+}
+.project-shorts__realized {
+  width: auto;
+  @media (min-width: $desktop) {
+    grid-area: 2/1/3/3;
+  }
+}
+
+.project-review {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    flex-basis: 40%;
+    overflow: visible;
+    position: relative;
+  }
+}
+.project-review__info {
+  background-color: transparentize($color-black, 0.99);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25),
+    inset 0px 2px 2px rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(30px);
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 2fr 7fr;
+  column-gap: 13px;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet) {
+    // position: absolute;
+    // left: 5%;
+    // top: 10%;
+    // transform: translate3D(-50%, -50%, 0);
+    border-radius: 20px;
+    grid-template-rows: repeat(3, auto);
+  }
+  @media (min-width: $desktop) {
+  }
+  h2 {
+    grid-area: 1/1/2/3;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: $color-black;
+    margin-bottom: 10px;
+  }
+}
+.project-review__photo-box {
+  grid-area: 2/1/3/2;
+  border-radius: 12px;
+  justify-self: stretch;
+
+  img {
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+  }
+}
+.project-review__client {
+  grid-area: 2/2/3/3;
+}
+.project-review__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-black;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet) {
+  }
+  @media (min-width: $desktop) {
+    margin-bottom: 10px;
+  }
+}
+.project-review__position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.project-review__cite {
+  grid-area: 3/1/4/3;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+.project-review__showmore {
+  display: none;
+
+  //   @media (min-width: $tablet) {
+  //     display: block;
+  //   }
+  //   @media (min-width: $desktop) {
+  //     display: none;
+  //   }
+}
+
+.project-description {
+  position: relative;
+  padding-top: 35px;
+  display: grid;
+  grid-template-columns: 100%;
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet) {
+    padding-top: 70px;
+    margin-bottom: 70px;
+  }
+  @media (min-width: $desktop) {
+    padding-top: 100px;
+    grid-template-columns: 55% auto;
+    column-gap: 37px;
+    grid-auto-rows: minmax(min-content, auto) minmax(max-content, 1fr);
+    margin-bottom: 100px;
+  }
+
+  h2 {
+    @include h3;
+    margin-bottom: 26px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 30px;
+    }
+    @media (min-width: $desktop) {
+      grid-area: 1/2/2/3;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.project-description__text {
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 44px;
+  }
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+    grid-area: 2/2/3/3;
+  }
+
+  & > p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-black;
+    margin-bottom: 15px;
+
+    @media (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    @media (min-width: $desktop) {
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.project-description__wrapper {
+  width: 100%;
+  height: 135px;
+  border-radius: 8px;
+  position: relative;
+  filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.25));
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet) {
+    height: 325px;
+  }
+  @media (min-width: $desktop) {
+    border-radius: 10px;
+    grid-area: 1/1/3/2;
+    height: 448px;
+    margin-bottom: 0;
+  }
+}
+
+.project-description__slideritem {
+  width: 100%;
+  height: 135px;
+
+  @media (min-width: $tablet) {
+    height: 325px;
+  }
+  @media (min-width: $desktop) {
+    border-radius: 10px;
+    height: 448px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+
+    @media (min-width: $tablet) {
+    }
+    @media (min-width: $desktop) {
+      border-radius: 10px;
+    }
+  }
+}
+
+.moreprojects {
+  @media (min-width: $tablet) {
+  }
+}

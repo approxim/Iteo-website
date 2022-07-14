@@ -29,3 +29,19 @@
         line-height: 75px;
     }
 }
+
+@mixin h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: $color-white;
+
+    @media (min-width: $tablet) {
+        font-size: 25px;
+        line-height: 29px;
+    }
+    @media (min-width: $desktop) {
+        font-size: 27px;
+        line-height: 32px;
+    }
+}
