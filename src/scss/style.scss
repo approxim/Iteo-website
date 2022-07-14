@@ -1,26 +1,23 @@
 // Global
-@import "./global/fonts.scss";
-@import "./global/reset.scss";
-@import "./global/variables.scss";
-@import "./global/global.scss";
-@import "./global/mixins.scss";
-@import "./global/keyframes.scss";
-
+@import './global/fonts.scss';
+@import './global/reset.scss';
+@import './global/variables.scss';
+@import './global/global.scss';
+@import './global/mixins.scss';
+@import './global/keyframes.scss';
 
 // Slick
-@import "./slick/slick-theme.scss";
-@import "./slick/slick.scss";
-@import "./slick/slick-custom.scss";
-
+@import './slick/slick-theme.scss';
+@import './slick/slick.scss';
+@import './slick/slick-custom.scss';
 
 // Components
-@import "./components/header.scss";
-@import "./components/1_panoram.scss";
-@import "./components/3_projects.scss";
-@import "./components/4_reviews-parnters.scss";
-@import "./components/project.scss";
-@import "./components/5_moreprojects.scss";
+@import './components/header.scss';
+@import './components/1_panoram.scss';
+@import './components/3_projects.scss';
+@import './components/4_reviews-parnters.scss';
+@import './components/project.scss';
+@import './components/bubbles.scss';
+@import './components/5_moreprojects.scss';
 
-
-@import "./components/footer.scss";
-
+@import './components/footer.scss';

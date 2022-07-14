@@ -1,6 +1,3 @@
-import $ from "jquery";
+import $ from 'jquery';
 
-export function projectPage() {
-
-
-}
+export function projectPage() {}
