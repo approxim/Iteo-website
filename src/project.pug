@@ -27,6 +27,11 @@ html
                             img(src="@img/images/test-picture_002.jpg" alt="picture" width="320" height="188")
                         .project-promo__slider-item.resize-height
                             img(src="@img/images/test-picture_003.jpg" alt="picture" width="320" height="188")
+                    .project-promo__slider-counter.slider-counter
+                        p 
+                            span.symbol 3
+                            span /
+                            span.symbol 7
 
             .project__wrap
                 // Коротко о проекте
@@ -60,33 +65,38 @@ html
                         button.project-review__showmore(type="button") 
                             span просмотреть
 
+            .project__wrap-2
+                // Описание проекта
+                section.project-description.container 
+                    h2 Описание проекта:
+                    .project-description__text
+                        p Однозначно, базовые сценарии поведения пользователей набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены. В своём стремлении повысить качество жизни, они забывают, что социально-экономическое развитие предопределяет высокую востребованность модели развития. Сложно сказать, почему явные признаки победы институционализации обнародованы. Следует отметить, что начало повседневной работы по формированию позиции выявляет срочную потребность благоприятных перспектив.
 
-            // Описание проекта
-            section.project-description.container 
-                h2 Описание проекта:
-                .project-description__text
-                    p Однозначно, базовые сценарии поведения пользователей набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены. В своём стремлении повысить качество жизни, они забывают, что социально-экономическое развитие предопределяет высокую востребованность модели развития. Сложно сказать, почему явные признаки победы институционализации обнародованы. Следует отметить, что начало повседневной работы по формированию позиции выявляет срочную потребность благоприятных перспектив.
+                    .project-description__wrapper.resize-height.resize-height
+                        .project-description__sliderlist
+                            .project-description__slideritem.resize-height.resize-height
+                                img(src="@img/images/test-picture_201.jpg" alt="picture" width="278" height="135")
 
-                .project-description__wrapper.resize-height.resize-height
-                    .project-description__sliderlist
-                        .project-description__slideritem.resize-height.resize-height
-                            img(src="@img/images/test-picture_201.jpg" alt="picture" width="278" height="135")
+                            .project-description__slideritem.resize-height.resize-height 
+                                img(src="@img/images/test-picture_202.jpg" alt="picture" width="278" height="135")
 
-                        .project-description__slideritem.resize-height.resize-height 
-                            img(src="@img/images/test-picture_202.jpg" alt="picture" width="278" height="135")
+                            .project-description__slideritem.resize-height.resize-height
+                                img(src="@img/images/test-picture_203.jpg" alt="picture" width="278" height="135")
 
-                        .project-description__slideritem.resize-height.resize-height
-                            img(src="@img/images/test-picture_203.jpg" alt="picture" width="278" height="135")
+                            .project-description__slideritem.resize-height.resize-height
+                                img(src="@img/images/test-picture_204.jpg" alt="picture" width="278" height="135")
 
-                        .project-description__slideritem.resize-height.resize-height
-                            img(src="@img/images/test-picture_204.jpg" alt="picture" width="278" height="135")
-
-            // Другие проекты
-            include html/components/5_more-projects
+                    .project-description__decoration 
+                        img(src="@img/images/decor_flower.png")
+                        img(src="@img/images/decor_compose-1.png")
 
 
+                // Другие проекты
+                include html/components/5_more-projects
 
-        //- include html/components/footer
+
+
+        include html/components/footer
 
         //- Скрипты
         include html/global/scripts-js
