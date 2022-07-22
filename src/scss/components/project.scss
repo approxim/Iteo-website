@@ -1,10 +1,19 @@
 .project {
+  background: linear-gradient(
+    180deg,
+    rgba(160, 215, 255, 0.5) 0%,
+    rgba(179, 227, 255, 0.5) 97.89%
+  );
   @media (min-width: $tablet) {
+  }
+
+  & .moreprojects {
+    margin-bottom: 0;
   }
 }
 
 .project-promo {
-  margin-top: 65px;
+  margin-top: 90px;
   position: relative;
   margin-bottom: 35px;
 
@@ -129,11 +138,14 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  background: url('../../img/images/decor_compose-1.webp') no-repeat bottom 5px
-      right 50px / 40%,
-    url('../../img/icons/floor.svg') repeat-x bottom right;
+  background-image: url('../../img/icons/floor.svg');
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 2.5px;
+  //   background: url('../../img/images/decor_compose-1.webp') no-repeat bottom 5px
+  //       right 50px / 40%;
   box-shadow: 0 15px 14px -6px rgba(0, 0, 0, 0.2);
-  padding-bottom: 130px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet) {
     flex-flow: row-reverse;
@@ -234,7 +246,7 @@
 }
 
 .project-review {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet) {
     flex-basis: 40%;
@@ -328,16 +340,43 @@
   //   }
 }
 
+.project__wrap-2 {
+  position: relative;
+  //   background: linear-gradient(
+  //     180deg,
+  //     rgba($color-blue, 0.3) 0%,
+  //     rgba($color-blue, 0.2) 100%
+  //   );
+  background: linear-gradient(
+    180deg,
+    rgba(87, 121, 244, 0.5) 0%,
+    rgba(163, 198, 252, 0.5) 100%
+  );
+  padding-bottom: 30px;
+}
+
 .project-description {
   position: relative;
   padding-top: 35px;
   display: grid;
   grid-template-columns: 100%;
-  margin-bottom: 55px;
+  margin-bottom: 40px;
+
+  background-image: url('../../img/icons/floor.svg');
+
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 2.5px;
+  box-shadow: 0 15px 14px -6px rgba(0, 0, 0, 0.2);
+  //   background: url('../../img/images/decor_compose-1.webp') no-repeat bottom 5px
+  //       right 50px / 40%;
+  //   padding-bottom: 100px;
 
   @media (min-width: $tablet) {
-    padding-top: 70px;
+    padding-top: 80px;
     margin-bottom: 70px;
+    box-shadow: none;
+    background-image: none;
   }
   @media (min-width: $desktop) {
     padding-top: 100px;
@@ -377,7 +416,7 @@
     font-size: 14px;
     line-height: 16px;
     color: $color-black;
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
 
     @media (min-width: $tablet) {
       font-size: 14px;
@@ -397,7 +436,8 @@
   border-radius: 8px;
   position: relative;
   filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.25));
-  margin-bottom: 10px;
+  //   margin-bottom: 10px;
+  margin-bottom: 100px;
 
   @media (min-width: $tablet) {
     height: 325px;
@@ -437,7 +477,24 @@
   }
 }
 
-.moreprojects {
+.project-description__decoration {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+
   @media (min-width: $tablet) {
+    display: none;
+  }
+
+  img:nth-of-type(1) {
+    max-height: 108px;
+  }
+  img:nth-of-type(2) {
+    max-height: 80px;
   }
 }
