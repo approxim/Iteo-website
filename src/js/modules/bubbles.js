@@ -3,8 +3,8 @@ const config = {
   posXmax: 100,
   posYmin: -30,
   posYmax: 70,
-  radiusMin: 150,
-  radiusMax: 300,
+  radiusMin: 100,
+  radiusMax: 150,
   moveSpeed: 0.1,
 };
 
@@ -79,17 +79,17 @@ function moveBubble(bubble) {
   }
 }
 
-function parallax() {
-  const compStyles = getComputedStyle(bubblesContainer);
-  const maxScroll = parseInt(getComputedStyle(document.body).height) - parseInt(window.outerHeight);
-  const scrollProc = (window.scrollY / maxScroll) * 100;
-  bubblesContainer.style.transform = `translateY(-${scrollProc * 0.6}%)`;
-  console.log(window.scrollY, getComputedStyle(document.body).height);
-  console.log(compStyles.top, compStyles.height);
-}
+// function parallax() {
+//   const compStyles = getComputedStyle(bubblesContainer);
+//   const maxScroll = parseInt(getComputedStyle(document.body).height) - parseInt(window.outerHeight);
+//   const scrollProc = (window.scrollY / maxScroll) * 100;
+//   bubblesContainer.style.transform = `translateY(-${scrollProc * 0.6}%)`;
+//   console.log(window.scrollY, getComputedStyle(document.body).height);
+//   console.log(compStyles.top, compStyles.height);
+// }
 
-parallax();
-document.addEventListener('scroll', parallax);
+// parallax();
+// document.addEventListener('scroll', parallax);
 function loop() {
   updateBubbles();
   window.requestAnimationFrame(loop);
