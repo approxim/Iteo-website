@@ -1,4 +1,10 @@
 import $ from 'jquery';
+let slickWrappers = [
+  {
+    wrapper: '.project-promo__slider-wrapper',
+    slider: '.project-promo__slider-list',
+  },
+];
 
 export function slickSliders() {
   // страница Проекта
@@ -26,7 +32,7 @@ export function slickSliders() {
   });
 
   $(function () {
-    $('.moreprojects__sliderlist').slick({
+    let temp = $('.moreprojects__sliderlist').slick({
       mobileFirst: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -60,18 +66,16 @@ export function slickSliders() {
       ],
     });
 
-    $('.moreprojects__sliderlist').on(
-      'afterChange',
-      function (event, slick, currentSlide) {
-        $('#cp').text(currentSlide + 1);
-      }
-    );
+    slickWrappers.forEach((slickWrapperObject) => {
+      let slickSlider = slickWrapperObject.slider;
+      let slickWrapper = slickWrapperObject.wrapper;
+      $(slickSlider).on('afterChange', function (event, slick, currentSlide) {
+        $(slickWrapper + ' .current-slide').text(currentSlide + 1);
+      });
+      $(slickWrapper + ' .max-slide').text($(slickSlider + ' .slick-track').children().length);
+    });
   });
 }
-
-$('.slider').on('afterChange', function (event, slick, currentSlide) {
-  $('#cp').text(currentSlide + 1);
-});
 
 export function slickCounter() {
   // let slickSlider = document.querySelector('.project-promo__slider-list');
